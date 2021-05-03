@@ -9,7 +9,7 @@ on:
     - cron: '15 5-22 * * *'
 
 jobs:
-  krakowbot-post:
+  warszawabot-post:
     runs-on: macOS-latest
     env:
       TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
