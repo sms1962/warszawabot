@@ -12,10 +12,18 @@ warszawabot_token <- rtweet::create_token(
 
 # Współrzędne punktu w Warszawie .
 
-lon <- round(runif(1, 20.851, 21.271), 4)
+# centrum 52.188268, 20.885447 - 52.272606, 21.141751
+lon <- round(runif(1, 20.885, 21.141), 4)
 lon <- format(lon, scientific = FALSE)
-lat <- round(runif(1, 52.097, 52.368), 4)
+lat <- round(runif(1, 52.188, 52.272), 4)
 lat <- format(lat, scientific = FALSE)
+
+# bbox Wawy
+
+# lon <- round(runif(1, 20.851, 21.271), 4)
+# lon <- format(lon, scientific = FALSE)
+# lat <- round(runif(1, 52.097, 52.368), 4)
+# lat <- format(lat, scientific = FALSE)
 # Adres do MapBox API
 # https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/
 
