@@ -39,10 +39,10 @@ jobs:
         run: Rscript -e 'install.packages("mapview", dependencies = TRUE)'
       - name: Create and post tweet
         run: Rscript warszawabot-tweet.R
- #     - name: archiwum twitow
- #      run: Rscript wabot_archiwum_twitow.R
-  #    - name: mapa twitow
-  #      run: Rscript mapa_twitow.R
+      - name: archiwum twitow
+        run: Rscript wabot_archiwum_twitow.R
+      - name: mapa twitow
+         run: Rscript mapa_twitow.R
       - name: Commit plików
         run: |
           git add -A
