@@ -6,7 +6,7 @@ on:
       - master
       - main
   schedule:
-    - cron: '15 5-18 * * *'
+    - cron: '15 5-22 * * *'
 
 jobs:
   krakowbot-post:
