@@ -42,7 +42,7 @@ jobs:
       - name: archiwum twitow
         run: Rscript warszawabot_archiwum_twitow.R
       - name: mapa twitow
-         run: Rscript mapa_twitow.R
+        run: Rscript mapa_twitow.R
       - name: Commit plików
         run: |
           git add -A
