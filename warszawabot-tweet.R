@@ -30,7 +30,7 @@ lat <- format(lat, scientific = FALSE)
 # po 600x400 dodany był @2x
 img_url <- paste0(
   "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/",
-  paste0(lon, ",", lat),
+  paste0("pin-l-marker+015(",lon,",",lat,")/", lon, ",", lat),
   ",15,0/850x500?access_token=",
   Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN")
 )
@@ -42,8 +42,8 @@ download.file(img_url, temp_file)
 
 # Współrzędne punktu i adres do mapy w OpenStreetMaps
 
-latlon_details <- paste0("Jestem botem, który co ca. 60 min. wybiera losowo punkt w #Warszawa (i okolicy), pobiera zdjęcie satelitarne.  Poniżej pkt o współ.: ", lat, ",", lon, "\n", "Jeśli nie poznajesz, to zobacz na mapie. ",
-  "https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
+latlon_details <- paste0("Jestem botem, który co 1 h wybiera losowo punkt w #KWarszawa, pobiera zdjęcie satelitarne. Poniżej pkt o współ.: ", lat, ", ", lon, " \n", "Nie poznajesz? Zobacz na mapie. ",
+                         "https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
 # Wysłanie twita ze zdjęciem satelitarnym
