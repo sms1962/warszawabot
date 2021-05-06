@@ -42,7 +42,7 @@ download.file(img_url, temp_file)
 
 # Współrzędne punktu i adres do mapy w OpenStreetMaps
 
-latlon_details <- paste0("Jestem botem, który co 1 h wybiera losowo punkt w #KWarszawa, pobiera zdjęcie satelitarne. Poniżej pkt o współ.: ", lat, ", ", lon, " \n", "Nie poznajesz? Zobacz na mapie. ",
+latlon_details <- paste0("Jestem botem, który co 1 h wybiera losowo punkt w #Warszawa, pobiera zdjęcie satelitarne. Poniżej pkt o współ.: ", lat, ", ", lon, " \n", "Nie poznajesz? Zobacz na mapie. ",
                          "https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
