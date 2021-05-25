@@ -34,7 +34,7 @@ m <- leaflet() %>%
   # addTiles() %>%  # Add default OpenStreetMap map tiles
   addCircleMarkers(dt$lon, dt$lat, clusterOptions = markerClusterOptions(), 
                    popup = paste0("<img src = ", dt$ext_media_url, " width='200' height='150' />","<br>","<a href=",dt$t_url,">Zobacz oryginalnego tweeta</a>"))
-m
+
 
 ## Zapisanie mapy w png
 
